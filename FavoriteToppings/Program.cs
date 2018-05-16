@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
 namespace ConsoleApp1
@@ -12,7 +14,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             var readFile = new FileReader().ReadFile();
-
             var findTop20 = new TallyList().FindTop20(readFile);
         }
     }
@@ -31,34 +32,37 @@ namespace ConsoleApp1
     {
         public List<Pizza> FindTop20(List<Pizza> readFile)
         {
-            var singleIngredientPizza = findSingleIngredientPies(readFile);
-            var twoIngredientPizza = findTwoIngredientPies(readFile);
+            var convertToppings = ConvertToppingsLists(readFile);
+            var orderList = OrderStrings(convertToppings);
+            
+           
 
             return readFile;
         }
 
-        public List<Pizza> findSingleIngredientPies(List<Pizza> pizzas)
+        private List<string> OrderStrings(List<string> convertToppings)
         {
-            var singleIngPies = new List<Pizza>();
-            foreach (var pizza in pizzas)
+            var twistedLetters = new List<string>();
+            foreach (var topping in convertToppings)
             {
-                if(pizza.Toppings.Count == 1)
-                    singleIngPies.Add(pizza);
+                var alphabetizedString = topping.OrderBy(x => x).ToString();
+                twistedLetters.Add(alphabetizedString);
             }
 
-            return singleIngPies;
+            return twistedLetters;
         }
-        
-        public List<Pizza> findTwoIngredientPies(List<Pizza> pizzas)
+
+        private List<string> ConvertToppingsLists(List<Pizza> readFile)
         {
-            var doubleIngPies = new List<Pizza>();
-            foreach (var pizza in pizzas)
+            var stringToppings = new List<string>();
+            foreach (var file in readFile)
             {
-                if(pizza.Toppings.Count == 2)
-                    doubleIngPies.Add(pizza);
+                var stringList = String.Join("", file.Toppings);
+                var removeSpace = Regex.Replace(stringList, @"\s+", "");
+                stringToppings.Add(removeSpace);
             }
 
-            return doubleIngPies;
+            return stringToppings;
         }
     }
 
