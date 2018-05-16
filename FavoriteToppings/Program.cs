@@ -34,10 +34,19 @@ namespace ConsoleApp1
         {
             var convertToppings = ConvertToppingsLists(readFile);
             var orderList = OrderStrings(convertToppings);
-            
+            var topStrings = Top20Pizzas(orderList);
            
 
             return readFile;
+        }
+
+        private bool Top20Pizzas(List<string> orderList)
+        {
+            var top20Strings = orderList.GroupBy(x => x).ToArray();
+
+            Console.WriteLine(top20Strings.Count());
+            
+            return true;
         }
 
         private List<string> OrderStrings(List<string> convertToppings)
@@ -45,8 +54,8 @@ namespace ConsoleApp1
             var twistedLetters = new List<string>();
             foreach (var topping in convertToppings)
             {
-                var alphabetizedString = topping.OrderBy(x => x).ToString();
-                twistedLetters.Add(alphabetizedString);
+                var alphabetizedString = topping.OrderBy(x => x).ToArray();
+                var orderedString = String.Join("", alphabetizedString);
             }
 
             return twistedLetters;
