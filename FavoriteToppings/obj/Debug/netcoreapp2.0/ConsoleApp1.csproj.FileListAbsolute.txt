@@ -1,0 +1,11 @@
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/bin/Debug/netcoreapp2.0/ConsoleApp1.deps.json
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/bin/Debug/netcoreapp2.0/ConsoleApp1.runtimeconfig.json
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/bin/Debug/netcoreapp2.0/ConsoleApp1.runtimeconfig.dev.json
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/bin/Debug/netcoreapp2.0/ConsoleApp1.dll
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/bin/Debug/netcoreapp2.0/ConsoleApp1.pdb
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/obj/Debug/netcoreapp2.0/ConsoleApp1.csprojAssemblyReference.cache
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/obj/Debug/netcoreapp2.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/obj/Debug/netcoreapp2.0/ConsoleApp1.AssemblyInfoInputs.cache
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/obj/Debug/netcoreapp2.0/ConsoleApp1.AssemblyInfo.cs
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/obj/Debug/netcoreapp2.0/ConsoleApp1.dll
+/Users/benharrington/workspace/c#projects/FavoriteToppings/FavoriteToppings/obj/Debug/netcoreapp2.0/ConsoleApp1.pdb
