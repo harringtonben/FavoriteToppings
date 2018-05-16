@@ -11,20 +11,22 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             var readFile = new FileReader().ReadFile();
-            Console.WriteLine(readFile);
+            
         }
     }
 
     public class FileReader
     {
-        public List<List<string>> ReadFile()
+        public List<Pizza> ReadFile()
         {
-            using (var file = File.OpenText("pizzas.json"))
-            {
-                var serializer = new JsonSerializer();
-                var pizzas = serializer.Deserialize(file, typeof(List<List<string>>));
-                return (List<List<string>>) pizzas;
-            }
+            var fileToRead = JsonConvert.DeserializeObject<List<Pizza>>(File.ReadAllText(@"./pizzas.json"));
+
+            return fileToRead;
         }
+    }
+
+    public class Pizza
+    {
+        public List<string> Toppings { get; set; }
     }
 }

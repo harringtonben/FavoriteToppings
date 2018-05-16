@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2a926e4-186b-43e2-9c22-494a4f7bc4da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/ConsoleApp1.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ConsoleApp1.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/ConsoleApp1.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/ConsoleApp1.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/ConsoleApp1.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,16 +21,25 @@
         <entry file="file://$PROJECT_DIR$/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
-                <marker date="1526431011191" expanded="true" signature="6:105" ph="..." />
-                <marker date="1526431011191" expanded="true" signature="128:707" ph="{...}" />
-                <marker date="1526431011191" expanded="true" signature="148:317" ph="{...}" />
-                <marker date="1526431011191" expanded="true" signature="194:311" ph="{...}" />
-                <marker date="1526431011191" expanded="true" signature="346:705" ph="{...}" />
-                <marker date="1526431011191" expanded="true" signature="397:699" ph="{...}" />
-                <marker date="1526431011191" expanded="true" signature="467:689" ph="{...}" />
+                <marker date="1526432445480" expanded="true" signature="6:105" ph="..." />
+                <marker date="1526432445480" expanded="true" signature="128:618" ph="{...}" />
+                <marker date="1526432445480" expanded="true" signature="148:289" ph="{...}" />
+                <marker date="1526432445480" expanded="true" signature="194:283" ph="{...}" />
+                <marker date="1526432445480" expanded="true" signature="318:529" ph="{...}" />
+                <marker date="1526432445480" expanded="true" signature="362:523" ph="{...}" />
+                <marker date="1526432445480" expanded="true" signature="553:616" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pizzas.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pizzas.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -131,12 +139,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526429749270</updated>
-      <workItem from="1526429751161" duration="1245000" />
+      <workItem from="1526429751161" duration="2664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1245000" />
+    <option name="totallyTimeSpent" value="2664000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -149,18 +157,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1855" height="1109" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32905138" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="NuGet" weight="0.37549406" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498621" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -182,18 +192,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pizzas.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
-            <marker date="1526431011191" expanded="true" signature="6:105" ph="..." />
-            <marker date="1526431011191" expanded="true" signature="128:707" ph="{...}" />
-            <marker date="1526431011191" expanded="true" signature="148:317" ph="{...}" />
-            <marker date="1526431011191" expanded="true" signature="194:311" ph="{...}" />
-            <marker date="1526431011191" expanded="true" signature="346:705" ph="{...}" />
-            <marker date="1526431011191" expanded="true" signature="397:699" ph="{...}" />
-            <marker date="1526431011191" expanded="true" signature="467:689" ph="{...}" />
+            <marker date="1526432445480" expanded="true" signature="6:105" ph="..." />
+            <marker date="1526432445480" expanded="true" signature="128:618" ph="{...}" />
+            <marker date="1526432445480" expanded="true" signature="148:289" ph="{...}" />
+            <marker date="1526432445480" expanded="true" signature="194:283" ph="{...}" />
+            <marker date="1526432445480" expanded="true" signature="318:529" ph="{...}" />
+            <marker date="1526432445480" expanded="true" signature="362:523" ph="{...}" />
+            <marker date="1526432445480" expanded="true" signature="553:616" ph="{...}" />
           </folding>
         </state>
       </provider>
