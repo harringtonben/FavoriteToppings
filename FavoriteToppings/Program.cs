@@ -35,16 +35,21 @@ namespace ConsoleApp1
             var convertToppings = ConvertToppingsLists(readFile);
             var orderList = OrderStrings(convertToppings);
             var topStrings = Top20Pizzas(orderList);
-           
 
             return readFile;
         }
 
-        private bool Top20Pizzas(List<string> orderList)
+        public bool Top20Pizzas(List<string> orderList)
         {
-            var top20Strings = orderList.GroupBy(x => x).ToArray();
 
-            Console.WriteLine(top20Strings.Count());
+            var top20Strings = orderList.GroupBy(x => x)
+                .Select(g => new {Value = g.Key, Count = g.Count()})
+                .OrderByDescending(x => x.Count);
+
+            foreach (var item in top20Strings)
+            {
+                Console.WriteLine($"{item.Value} {item.Count}");
+            }
             
             return true;
         }
@@ -56,6 +61,7 @@ namespace ConsoleApp1
             {
                 var alphabetizedString = topping.OrderBy(x => x).ToArray();
                 var orderedString = String.Join("", alphabetizedString);
+                twistedLetters.Add(orderedString);
             }
 
             return twistedLetters;
