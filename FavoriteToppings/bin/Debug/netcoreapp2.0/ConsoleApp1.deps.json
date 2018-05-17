@@ -1,19 +1,29 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "883f5ab0e357ef56d00e5851b3cee30b45ba651b"
+    "signature": "83782b82a2238a97ba639e76a43477a4c59954d0"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "ConsoleApp1/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "MoreLinq.Source.MoreEnumerable.DistinctBy": "1.0.2",
+          "MoreLinq.Source.MoreEnumerable.MaxBy": "1.0.2",
+          "Newtonsoft.Json": "11.0.2",
+          "morelinq": "3.0.0-beta-2"
         },
         "runtime": {
           "ConsoleApp1.dll": {}
         }
       },
+      "morelinq/3.0.0-beta-2": {
+        "runtime": {
+          "lib/netstandard2.0/MoreLinq.dll": {}
+        }
+      },
+      "MoreLinq.Source.MoreEnumerable.DistinctBy/1.0.2": {},
+      "MoreLinq.Source.MoreEnumerable.MaxBy/1.0.2": {},
       "Newtonsoft.Json/11.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -26,6 +36,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "morelinq/3.0.0-beta-2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-csTaYCSKlve/jxDL1PSkH+wOf7Hm6qcSOQI9g1OPxoWUc0gdaIkwvAiWqat65sw+fvBBAyO0cg5YV1YEFfr8sw==",
+      "path": "morelinq/3.0.0-beta-2",
+      "hashPath": "morelinq.3.0.0-beta-2.nupkg.sha512"
+    },
+    "MoreLinq.Source.MoreEnumerable.DistinctBy/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5nvK0vyWMmPGsSETofUYox4D+4LMoGvUNY6rzb6EedG6YcJv83/q65cR9qIzC8Z2ZfLCqaCLqX5XyoTMVsB9hw==",
+      "path": "morelinq.source.moreenumerable.distinctby/1.0.2",
+      "hashPath": "morelinq.source.moreenumerable.distinctby.1.0.2.nupkg.sha512"
+    },
+    "MoreLinq.Source.MoreEnumerable.MaxBy/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nsFlOIr2TCMh6rgLehlgBXYrl9GEPd4Qxp5op8wQkkP6fhhYVLLgbGw/uairMzZoxlCni9zQJf/w6uIf5d0fsA==",
+      "path": "morelinq.source.moreenumerable.maxby/1.0.2",
+      "hashPath": "morelinq.source.moreenumerable.maxby.1.0.2.nupkg.sha512"
     },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",
