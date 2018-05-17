@@ -31,6 +31,22 @@
           "target": "Package",
           "version": "[2.0.0, )",
           "autoReferenced": true
+        },
+        "MoreLinq.Source.MoreEnumerable.DistinctBy": {
+          "target": "Package",
+          "version": "[1.0.2, )"
+        },
+        "MoreLinq.Source.MoreEnumerable.MaxBy": {
+          "target": "Package",
+          "version": "[1.0.2, )"
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[11.0.2, )"
+        },
+        "morelinq": {
+          "target": "Package",
+          "version": "[3.0.0-beta-2, )"
         }
       },
       "imports": [

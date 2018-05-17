@@ -182,6 +182,21 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "morelinq/3.0.0-beta-2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MoreLinq.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MoreLinq.dll": {}
+        }
+      },
+      "MoreLinq.Source.MoreEnumerable.DistinctBy/1.0.2": {
+        "type": "package"
+      },
+      "MoreLinq.Source.MoreEnumerable.MaxBy/1.0.2": {
+        "type": "package"
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -195,6 +210,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       }
     }
@@ -529,6 +553,41 @@
         "version.txt"
       ]
     },
+    "morelinq/3.0.0-beta-2": {
+      "sha512": "csTaYCSKlve/jxDL1PSkH+wOf7Hm6qcSOQI9g1OPxoWUc0gdaIkwvAiWqat65sw+fvBBAyO0cg5YV1YEFfr8sw==",
+      "type": "package",
+      "path": "morelinq/3.0.0-beta-2",
+      "files": [
+        "lib/net451/MoreLinq.dll",
+        "lib/net451/MoreLinq.xml",
+        "lib/netstandard1.0/MoreLinq.dll",
+        "lib/netstandard1.0/MoreLinq.xml",
+        "lib/netstandard2.0/MoreLinq.dll",
+        "lib/netstandard2.0/MoreLinq.xml",
+        "morelinq.3.0.0-beta-2.nupkg.sha512",
+        "morelinq.nuspec"
+      ]
+    },
+    "MoreLinq.Source.MoreEnumerable.DistinctBy/1.0.2": {
+      "sha512": "5nvK0vyWMmPGsSETofUYox4D+4LMoGvUNY6rzb6EedG6YcJv83/q65cR9qIzC8Z2ZfLCqaCLqX5XyoTMVsB9hw==",
+      "type": "package",
+      "path": "morelinq.source.moreenumerable.distinctby/1.0.2",
+      "files": [
+        "content/net35/MoreLinq/MoreEnumerable.DistinctBy.cs",
+        "morelinq.source.moreenumerable.distinctby.1.0.2.nupkg.sha512",
+        "morelinq.source.moreenumerable.distinctby.nuspec"
+      ]
+    },
+    "MoreLinq.Source.MoreEnumerable.MaxBy/1.0.2": {
+      "sha512": "nsFlOIr2TCMh6rgLehlgBXYrl9GEPd4Qxp5op8wQkkP6fhhYVLLgbGw/uairMzZoxlCni9zQJf/w6uIf5d0fsA==",
+      "type": "package",
+      "path": "morelinq.source.moreenumerable.maxby/1.0.2",
+      "files": [
+        "content/net20/MoreLinq/MoreEnumerable.MaxBy.cs",
+        "morelinq.source.moreenumerable.maxby.1.0.2.nupkg.sha512",
+        "morelinq.source.moreenumerable.maxby.nuspec"
+      ]
+    },
     "NETStandard.Library/2.0.0": {
       "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
@@ -656,11 +715,43 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "MoreLinq.Source.MoreEnumerable.DistinctBy >= 1.0.2",
+      "MoreLinq.Source.MoreEnumerable.MaxBy >= 1.0.2",
+      "Newtonsoft.Json >= 11.0.2",
+      "morelinq >= 3.0.0-beta-2"
     ]
   },
   "packageFolders": {
@@ -707,6 +798,22 @@
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "MoreLinq.Source.MoreEnumerable.DistinctBy": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
+          "MoreLinq.Source.MoreEnumerable.MaxBy": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
+          },
+          "morelinq": {
+            "target": "Package",
+            "version": "[3.0.0-beta-2, )"
           }
         },
         "imports": [
