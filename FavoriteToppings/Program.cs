@@ -17,6 +17,11 @@ namespace ConsoleApp1
         {
             var readFile = new FileReader().ReadFile();
             var findTop20 = new TallyList().FindTop20(readFile);
+
+            foreach (var item in findTop20)
+            {
+                Console.WriteLine($"a pizza with the following toppings ({item.PrettToppingString}) was ordered {item.NumberOfOrders} times.");
+            }
         }
     }
 
@@ -32,25 +37,29 @@ namespace ConsoleApp1
     
     public class TallyList
     {
-        public bool FindTop20(List<Pizza> readFile)
+        public List<Pizza> FindTop20(List<Pizza> readFile)
         {
+            var top20Pizzas = new List<Pizza>();
             var convertToppings = ConvertToppingsLists(readFile);
             var orderList = OrderStrings(convertToppings);
             var pizzas = Top20Pizzas(orderList);
-            var top20Pizzas = FilterPizzas(pizzas);
+            var orderPizzas = FilterPizzas(pizzas);
+
+            foreach (var pizza in orderPizzas)
+            {
+                if (top20Pizzas.Count < 20)
+                    top20Pizzas.Add(pizza);
+            }
             
-            return true;
+            return top20Pizzas;
         }
 
         private List<Pizza> FilterPizzas(List<Pizza> pizzas)
         {
             var distinctPizzas = pizzas.DistinctBy(x=> x.NumberOfOrders).ToList();
-            var orderedPizzas = distinctPizzas.MaxBy(x => x.NumberOfOrders).ToList();
+            var orderedPizzas = distinctPizzas.OrderByDescending(x => x.NumberOfOrders).ToList();
             
-            Console.WriteLine(pizzas.Count);
-            Console.WriteLine(distinctPizzas.Count);
-
-            return distinctPizzas;
+            return orderedPizzas;
         }
 
         public List<Pizza> Top20Pizzas(List<Pizza> orderList)
