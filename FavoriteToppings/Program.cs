@@ -25,6 +25,7 @@ namespace ConsoleApp1
         }
     }
 
+    //This class reads the file and parses it into a list of the class of Pizza and returns it to the Main method.
     public class FileReader
     {
         public List<Pizza> ReadFile()
@@ -35,8 +36,10 @@ namespace ConsoleApp1
         }
     }
     
+    //This class holds all of the logic to return the top 20 pizzas in the List
     public class TallyList
     {
+        //This method invokes all of the logic and filters the top 20 pizza orders
         public List<Pizza> FindTop20(List<Pizza> readFile)
         {
             var top20Pizzas = new List<Pizza>();
@@ -54,6 +57,7 @@ namespace ConsoleApp1
             return top20Pizzas;
         }
 
+        //This method filters the pizzas by number of Orders from largest to smallest and removes all duplicates
         private List<Pizza> FilterPizzas(List<Pizza> pizzas)
         {
             var distinctPizzas = pizzas.DistinctBy(x=> x.NumberOfOrders).ToList();
@@ -62,6 +66,7 @@ namespace ConsoleApp1
             return orderedPizzas;
         }
 
+        //This method first counts the number of similar topping orders and tallies them and then returns that number to a propery in the list
         public List<Pizza> Top20Pizzas(List<Pizza> orderList)
         {
             var allTheZas = new List<Pizza>();
@@ -89,6 +94,7 @@ namespace ConsoleApp1
             return allTheZas;
         }
 
+        //This method alphabetizes each combined string in order for the strings to be compared and counted
         private List<Pizza> OrderStrings(List<Pizza> convertToppings)
         {
 
@@ -102,6 +108,7 @@ namespace ConsoleApp1
             return convertToppings;
         }
 
+        //This method joins the list of toppings in each Pizza in the List and saves them to a new property
         private List<Pizza> ConvertToppingsLists(List<Pizza> readFile)
         {
             
